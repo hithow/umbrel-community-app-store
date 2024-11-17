@@ -13,6 +13,10 @@ website: https://portainer.io/
 submitter: HitHow
 repo: https://github.com/portainer/agent
 support: https://github.com/portainer/agent/issues
+gallery:
+  - https://i.imgur.com/yyVG0Jb.jpeg
+  - https://i.imgur.com/yyVG0Jb.jpeg
+  - https://i.imgur.com/yyVG0Jb.jpeg
 releaseNotes: >-
 dependencies: []
 path: ""
