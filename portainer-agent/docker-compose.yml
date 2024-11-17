@@ -8,8 +8,10 @@ services:
       PROXY_AUTH_ADD: "false"
   server:
     image: portainer/agent:2.24.0
+    user: "9001:9001"
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - /var/lib/docker/volumes:/var/lib/docker/volumes
     restart: on-failure
     stop_grace_period: 1m
+    init: true
