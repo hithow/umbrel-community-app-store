@@ -1,5 +1,13 @@
+version: "3.7"
 services:
-  portainer_agent:
+ app_proxy:
+    environment:
+      # The format here is: <app-id>_<docker-service-name>_1
+      APP_HOST: hithow-portainer-agent_server_1
+      APP_PORT: 9001
+      PROXY_AUTH_ADD: "false"
+    
+  server:
     image: portainer/agent:2.24.0
     container_name: portainer_agent
     ports:
