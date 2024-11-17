@@ -7,7 +7,7 @@ services:
       APP_PORT: 9001
       PROXY_AUTH_ADD: "false"
   server:
-    image: portainer/agent:2.24.0
+    image: portainer/agent:2.21.4
     user: "9001:9001"
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
