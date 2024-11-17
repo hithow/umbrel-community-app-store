@@ -1,15 +1,15 @@
 version: "3.7"
 services:
- app_proxy:
+  app_proxy:
     environment:
       # The format here is: <app-id>_<docker-service-name>_1
       APP_HOST: hithow-portainer-agent_server_1
       APP_PORT: 9001
       PROXY_AUTH_ADD: "false"
-    
   server:
     image: portainer/agent:2.24.0
-    restart: on-failure
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - /var/lib/docker/volumes:/var/lib/docker/volumes
+    restart: on-failure
+    stop_grace_period: 1m
