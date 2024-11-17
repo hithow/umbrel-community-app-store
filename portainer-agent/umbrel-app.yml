@@ -2,7 +2,7 @@ manifestVersion: 1
 id: hithow-portainer-agent
 name: Portainer Agent
 tagline: Agent for managing Docker environments
-icon: "https://github.com/hithow/umbrel-community-app-store/blob/master/portainer-agent/images/portainer_logo.png"
+icon: https://raw.githubusercontent.com/hithow/umbrel-community-app-store/master/portainer-agent/images/portainer_logo.png
 category: Development
 version: "2.24.0"
 port: 9001
@@ -13,10 +13,6 @@ website: https://portainer.io/
 submitter: HitHow
 repo: https://github.com/portainer/agent
 support: https://github.com/portainer/agent/issues
-gallery:
-  - https://i.imgur.com/yyVG0Jb.jpeg
-  - https://i.imgur.com/yyVG0Jb.jpeg
-  - https://i.imgur.com/yyVG0Jb.jpeg
 releaseNotes: >-
 dependencies: []
 path: ""
